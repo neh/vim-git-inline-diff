@@ -1,13 +1,13 @@
-map <silent> <Leader>d :call <SID>gitDiff()<CR>
+map <silent> <Leader>ds :call <SID>gitDiff()<CR>
 
 hi SignColumn guifg=#7c7c7c guibg=#000000 gui=NONE
-hi scmLineAdded guibg=#65b042 guifg=#65b042
-hi scmLineChanged guibg=#3387cc guifg=#3387cc
-hi scmLineRemoved guifg=#ff0000
+hi scmLineAdded guibg=#65b042 guifg=#65b042 ctermfg=082
+hi scmLineChanged guibg=#3387cc guifg=#3387cc ctermfg=226
+hi scmLineRemoved guifg=#ff0000 ctermfg=196
 
-sign define scmLineAdded text=_ texthl=scmLineAdded
-sign define scmLineChanged text=_ texthl=scmLineChanged
-sign define scmLineRemoved text=__ texthl=scmLineRemoved
+sign define scmLineAdded text=⚡ texthl=scmLineAdded
+sign define scmLineChanged text=⚠ texthl=scmLineChanged
+sign define scmLineRemoved text=☓ texthl=scmLineRemoved
 sign define scmGhost
 
 ruby << EOF

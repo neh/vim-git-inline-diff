@@ -5,9 +5,9 @@ hi scmLineAdded guibg=#65b042 guifg=#65b042 ctermfg=082
 hi scmLineChanged guibg=#3387cc guifg=#3387cc ctermfg=226
 hi scmLineRemoved guifg=#ff0000 ctermfg=196
 
-sign define scmLineAdded text=⚡ texthl=scmLineAdded
-sign define scmLineChanged text=⚠ texthl=scmLineChanged
-sign define scmLineRemoved text=☓ texthl=scmLineRemoved
+sign define scmLineAdded text=▶ texthl=scmLineAdded
+sign define scmLineChanged text=◆ texthl=scmLineChanged
+sign define scmLineRemoved text=◀ texthl=scmLineRemoved
 sign define scmGhost
 
 ruby << EOF
